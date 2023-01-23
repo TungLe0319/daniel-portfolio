@@ -39,6 +39,13 @@
             Contact
           </button>
         </li>
+<li>
+          <button @click="scrollTo(4)" class="btn text-light font-1 fs-4">
+            <a href="https://www.canva.com/design/DAFRxHMppjs/aIpYUfSCBg_b3kCrZUFFBA/view?utm_content=DAFRxHMppjs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="text-white" target="_blank">
+              Resume
+            </a>
+          </button>
+        </li>
       </ul>
       <!-- LOGIN COMPONENT HERE -->
     </div>
