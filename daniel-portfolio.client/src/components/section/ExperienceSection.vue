@@ -1,5 +1,5 @@
 <template>
-  <section id="experience" class="py-5 ">
+  <section id="experience" class="py-5">
     <div class="container">
       <div class="section-title">
         <h1
@@ -23,11 +23,9 @@
               Education
             </p>
           </div>
-
         </div>
         <div class="col-md-6">
-
-            <!-- <div class="v-motion">
+          <!-- <div class="v-motion">
               <img
                 src="https://avatars.githubusercontent.com/u/94322600?s=280&v=4"
                 alt="Full Stack Immersive Logo"
@@ -35,12 +33,16 @@
               /></div
           >
          -->
-        <div class="">
-
-  <!-- <img src="https://avatars.githubusercontent.com/u/94322600?s=280&v=4" alt="Front image" class="front-image"> -->
-  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbcw.blob.core.windows.net%2Fpublic%2Fimg%2F8600856373152463&f=1&nofb=1&ipt=7556aa255fdb3f0a77caa1be29b0f23e5f3d403a76f098fca104b1911e9c485b&ipo=images" alt="Back image" class="back-image m-5" width="175" height="175">
-</div>
-
+          <div class="">
+            <!-- <img src="https://avatars.githubusercontent.com/u/94322600?s=280&v=4" alt="Front image" class="front-image"> -->
+            <img
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbcw.blob.core.windows.net%2Fpublic%2Fimg%2F8600856373152463&f=1&nofb=1&ipt=7556aa255fdb3f0a77caa1be29b0f23e5f3d403a76f098fca104b1911e9c485b&ipo=images"
+              alt="Back image"
+              class="back-image m-5"
+              width="175"
+              height="175"
+            />
+          </div>
         </div>
 
         <div class="col-md-6 align-items-center">
@@ -77,13 +79,10 @@
           <p class="font-1 text-warning fs-2">Languages & Technologies</p>
         </div>
 
-
-
-
         <div class="col-md-12">
           <ul class="d-md-flex justify-content-between gap-5 g-5">
             <li
-              class="list-group-item font-2 fs-5 filter-button active  selectable rounded"
+              class="list-group-item font-2 fs-5 filter-button active selectable rounded"
               @click="filterImages('reset', $event)"
             >
               All
@@ -123,7 +122,13 @@
           >
             <ParallaxMouse>
               <CartoonFrame v-motion-roll-visible-once-left>
-                <img class="img-fluid box3 box" :src="s.src" :title="s.title" />
+                <div class="">
+                  <img
+                    class="img-fluid box3 box fix-height"
+                    :src="s.src"
+                    :title="s.title"
+                  />
+                </div>
               </CartoonFrame>
             </ParallaxMouse>
           </div>
@@ -196,7 +201,6 @@
             ></i> -->
           </p>
         </div>
-
       </div>
 
       <!-- SECTION DEVSOPPORTUNITIES -->
@@ -208,34 +212,47 @@
         </div>
 
         <div class="col-md-6">
-       <div class="row">
-        <div class="col-md-6">
-   <div
-            v-motion-slide-visible-once-bottom
-            :delay="300"
-            class="card border-0 elevation-6 text-center"
-          >
-            <img
-              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ScQpzKmWalxq0KeWWBux-gHaD4%26pid%3DApi&f=1&ipt=0fd2170aa01a2dbe148cac426af933086226376185d4ad2eed12e5341c1c6e3c&ipo=images"
-              alt="ks3 image"
-              class="rounded img-fluid elevation-6"
-            />
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div
+                v-motion-slide-visible-once-bottom
+                :delay="300"
+                class="card border-0 elevation-6 text-center"
+              >
+                <img
+                  src="https://www.typescriptlang.org/images/branding/two-colors.svg"
+                  alt="ts image"
+                  class="rounded img-fluid elevation-6 learning"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                v-motion-slide-visible-once-bottom
+                :delay="300"
+                class="card border-0 elevation-6 text-center"
+              >
+                <img
+                  src="https://www.jrenterprisesolutions.com/files/2020/05/Docker-Logo-White-RGB_Vertical-BG_0.png"
+                  alt="docker image"
+                  class="rounded img-fluid elevation-6 learning"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 mt-4">
+              <div
+                v-motion-slide-visible-once-bottom
+                :delay="300"
+                class="card border-0 elevation-6 text-center"
+              >
+                <img
+                  src="https://i.pinimg.com/originals/b5/9c/74/b59c74587d50338c4107135deec95dd0.png"
+                  alt="docker image"
+                  class="rounded img-fluid elevation-6 learning"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6">
-   <div
-            v-motion-slide-visible-once-bottom
-            :delay="300"
-            class="card border-0 elevation-6 text-center"
-          >
-            <img
-              src="https://www.jrenterprisesolutions.com/files/2020/05/Docker-Logo-White-RGB_Vertical-BG_0.png"
-              alt="docker image"
-              class="rounded img-fluid elevation-6"
-            />
-          </div>
-        </div>
-       </div>
         </div>
 
         <div class="col-md-6">
@@ -244,9 +261,16 @@
             :delay="300"
             class="font-2 text-light"
           >
-        I am attempting to teach myself on learning K3s Kubernetes and Docker. Kubernetes and Docker are popular technologies for containerizing and deploying applications in a flexible and scalable way.
-I am excited to continue learning and to explore the ways in which they can help me to improve the performance, security, and scalability of my applications. I am also looking into the implementation and documentation of both technologies, as I believe that a strong understanding of their underlying principles and best practices is essential for effective development.
-
+            I am attempting to teach myself Typescript, Docker, and also
+            learning CompTia's Security+ I've recently been working with
+            typescript on Nuxt and Next projects alike and its benefits are
+            showings its colors fast! On the other hand I have been creating
+            Virtual machines with docker engines to host and deploy all my
+            applications, with that said i'll still be in the docker
+            documentation to figure some more complex tasks out. Having many
+            docker enviromants and applications on the web i'll now need to be
+            able to protect my servers and applications leading me to studying
+            CompTIA material.
           </p>
         </div>
       </div>
@@ -266,9 +290,7 @@ export default {
   props: {},
   setup(props) {
     const editable = ref({});
-    onMounted(() => {
-
-    });
+    onMounted(() => {});
     watchEffect(() => {});
 
     return {
@@ -344,8 +366,14 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
-
+.fix-height {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+.learning {
+  height: 150px;
+}
 
 .card-1 {
   perspective: 1000px;
@@ -359,10 +387,7 @@ export default {
 }
 .card-1 img.front-image {
   opacity: 0;
-
 }
-
-
 
 .card-1:hover img.front-image {
   opacity: 1;
@@ -374,17 +399,6 @@ export default {
   transform: rotateY(0deg);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .active {
   color: #ffd454 !important;
   font-size: 2rem;
@@ -394,7 +408,6 @@ export default {
 ul {
   counter-reset: index;
   padding: 0;
-
 }
 
 /* List element */

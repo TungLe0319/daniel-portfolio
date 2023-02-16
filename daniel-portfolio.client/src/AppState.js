@@ -8,30 +8,22 @@ export const AppState = reactive({
   spaceman: "./assets/img/spacemanFull.mp4",
 
   percent: 0,
-  // portfolioImages: [
-  //   "../../assets/img/portfolio/InspireSS.png",
-  //   "../../assets/img/portfolio/DimensionMiner.png",
-  //   "../../assets/img/portfolio/ImGame.png",
-  //   "../../assets/img/portfolio/KeeprSS.png",
-  //   "../../assets/img/portfolio/Network.png",
-  //   "../../assets/img/portfolio/TowerSS.png",
-  // ],
 
   skillsIcons: [
+    // {
+    //   title: "HTML5",
+    //   src: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png",
+    //   type: "lang",
+    //   id: 1,
+    // },
+    // {
+    //   title: "CSS3",
+    //   src: "https://armortechs.com/upload/image/blog/css-variables-css-3-logo.png",
+    //   type: "lang",
+    //   id: 2,
+    // },
     {
-      title: "HTML5",
-      src: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png",
-      type: "lang",
-      id: 1,
-    },
-    {
-      title: "CSS3",
-      src: "https://armortechs.com/upload/image/blog/css-variables-css-3-logo.png",
-      type: "lang",
-      id: 2,
-    },
-    {
-      title: "JavaScript ES6",
+      title: "JavaScript",
       src: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png",
       type: "lang",
       id: 3,
@@ -55,6 +47,11 @@ export const AppState = reactive({
       id: 6,
     },
     {
+      title: "Nuxt.js",
+      src: "https://imgs.search.brave.com/h9Ygf1p_bI45LGpoQjGdX_OWGLsEjbFsHBZ5m2tR2zA/rs:fit:600:600:1/g:ce/aHR0cHM6Ly9vcGVu/Y29sbGVjdGl2ZS1w/cm9kdWN0aW9uLnMz/LXVzLXdlc3QtMS5h/bWF6b25hd3MuY29t/LzYzMDQ3ODMwLTIz/YjktMTFlOS04MDcz/LWM3M2Y5ZDhjMDQ3/ZC5wbmc",
+      type: "framework",
+    },
+    {
       title: "Next.js",
       src: "https://seeklogo.com/images/N/next-js-icon-logo-EE302D5DBD-seeklogo.com.png",
       type: "framework",
@@ -65,6 +62,16 @@ export const AppState = reactive({
       src: "https://wpguru.co.uk/wp-content/uploads/2020/04/dotnet-logo.png",
       type: "framework",
       id: 7,
+    },
+    {
+      title: "Astro",
+      src: "https://astro.build/assets/press/logomark-light.png",
+      type: "framework",
+    },
+    {
+      title: "Angular",
+      src: "https://angular.io/assets/images/logos/angular/angular.svg",
+      type: "framework",
     },
     {
       title: "BootStrap ",
@@ -79,12 +86,26 @@ export const AppState = reactive({
       id: 9,
     },
     {
+      title: "Trpc",
+      src: "https://trpc.io/img/logo.svg",
+      type: "tech",
+    },
+    {
+      title: "Prisma ORM",
+      src: "https://i.pinimg.com/originals/39/b2/e4/39b2e4ad77c23a2c11e5950a7dfa2aec.png",
+      type: "tech",
+    },
+    {
       title: "Sass",
       src: "https://vanseodesign.com/blog/wp-content/uploads/2015/09/sass-logo-2.png",
       type: "lang",
       id: 10,
     },
-
+    {
+      title: "postgreSQL",
+      src: "https://cdn.freebiesupply.com/logos/thumbs/2x/postgresql-logo.png",
+      type: "database",
+    },
     {
       title: "MySQL",
       src: "https://findicons.com/files/icons/977/rrze/720/database_mysql.png",
@@ -140,6 +161,11 @@ export const AppState = reactive({
       id: 17,
     },
     {
+      title: "Docker",
+      type: "tech",
+      src: "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
+    },
+    {
       title: "FireBase",
       src: "https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png",
       type: "database",
@@ -147,8 +173,8 @@ export const AppState = reactive({
     },
     {
       title: "PocketBase",
-      src: "https://pbs.twimg.com/profile_images/1544692814822391811/s2hcCido_400x400.png",
-      type: "database",
+      src: "https://seeklogo.com/images/P/pocketbase-logo-CA73994F09-seeklogo.com.png",
+      type: "framework",
       id: 18,
     },
     {
